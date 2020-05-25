@@ -1,0 +1,24 @@
+<app-header title="Inscripciones a Eventos"></app-header>
+
+<ion-content>
+
+  <ion-list-header>
+    <ion-label>Nombre: {{nombre || 'No hay nombre'}}</ion-label>
+  </ion-list-header>
+
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Nombre :</ion-label>
+      <ion-input type="text"
+                 [(ngModel)]="nombre"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <form #formulario="ngForm" (ngSubmit)="onSubmitTemplate()">
+
+
+
+
+  </form>
+
+</ion-content>
